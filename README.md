@@ -8,6 +8,9 @@ Add HTML Folder components into subdivided files and make Components
 
 Add CSS File "neumorphism.css" into stlyesheet. add in routing file.
 
+//To do List
+- Make Components and Services Folder
+- 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
