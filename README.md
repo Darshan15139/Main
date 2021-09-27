@@ -1,6 +1,10 @@
-# HelloWorld
+# Computezz Project File
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+
+**## Using Neumorphism UI**
+Add HTML Folder components into subdivided files and make Components
+Add CSS File "neumorphism.css" into stlyesheet. add in routing file.
 
 ## Development server
 
