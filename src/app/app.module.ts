@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { ProductTabComponent } from './Components/product-tab/product-tab.component';
 
 
 
@@ -13,6 +14,7 @@ import { FooterComponent } from './Components/footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    ProductTabComponent,
 
 
   ],
