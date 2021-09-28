@@ -221,10 +221,14 @@ a:not([href]):not([tabindex]):focus {
 
 pre,
 code,
-kbd,
+kbd,/*Product Title Changes*/
 samp {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
 }
 
 pre {
@@ -687,6 +691,7 @@ pre code {
 }
 
 .row {
+    margin-top: 120px;/*Product Page height Adjustment*/
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -6516,6 +6521,7 @@ input[type="button"].btn-block {
 }
 
 .card {
+    /* max-width: 100ch; */
     position: relative;
     display: flex;
     flex-direction: column;

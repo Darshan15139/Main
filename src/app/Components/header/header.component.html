@@ -105,7 +105,7 @@
 
           <li class="nav-item dropdown mega-dropdown">
             <a href="#" class="nav-link" data-toggle="dropdown">
-              <span class="nav-link-inner-text">Components</span>
+              <span class="nav-link-inner-text">Products</span>
               <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
             </a>
             <div class="dropdown-menu">
@@ -454,7 +454,7 @@
                           >Updated</span
                         ></span
                       >
-                      <span class="small">Manuals and guides</span>
+                      <span class="small">Manuals & guides</span>
                     </div>
                   </a>
                   <a
@@ -487,11 +487,11 @@
             </div>
           </li>
 
-          <div class="form-group mb-4">
+          <div style="width: 300px;" class="form-group mb-4">
             <div class="input-group input-group-shadow">
                 <input class="form-control" placeholder="Find Anything" type="text">
                 <div class="input-group-append">
-                    <span class="input-group-text">Search<i class="fas fa-search"></i></span>
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
             </div>
         </div>
@@ -504,13 +504,13 @@
           href="https://themesberg.com/product/ui-kits/neumorphism-ui-pro"
           target="_blank"
           class="btn btn-primary text-secondary d-none d-md-inline-block mr-3"
-          ><i class="far fa-paper-plane mr-2"></i>Register as Seller</a
+          ><i class="fas fa-user-plus"></i> Register as Seller</a
         >
         <a
-          href="https://themesberg.com/docs/neumorphism-ui/getting-started/quick-start/"
+          [routerLink]="['/sign-up/sign-up.component.html']"
           target="_blank"
           class="btn btn-primary"
-          ><i class="fas fa-book"></i> Sign in</a
+          ><i class="fas fa-sign-in-alt"></i> Sign in</a
         >
         <button
           class="navbar-toggler ml-2"

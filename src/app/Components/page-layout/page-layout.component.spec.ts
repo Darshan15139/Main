@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ProductTabComponent } from './product-tab.component';
 
+import { PageLayoutComponent } from './page-layout.component';
 
-describe('ProductTabComponent', () => {
-  let component: ProductTabComponent;
-  let fixture: ComponentFixture<ProductTabComponent>;
+describe('PageLayoutComponent', () => {
+  let component: PageLayoutComponent;
+  let fixture: ComponentFixture<PageLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProductTabComponent ]
+      declarations: [ PageLayoutComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProductTabComponent);
+    fixture = TestBed.createComponent(PageLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

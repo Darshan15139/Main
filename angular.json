@@ -24,8 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/css/neuromorphism.css",
-              "src/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+              "src/styles.css",
+              "src/vendor/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/vendor/bootstrap/dist/css/bootstrap-grid.min.css",
+              "src/vendor/nouislider/distribute/nouislider.min.css"
             ],
             "scripts": []
           },
