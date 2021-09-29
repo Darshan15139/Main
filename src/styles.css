@@ -114,7 +114,15 @@ hr {
     height: 0;
     overflow: visible;
 }
+.product-tile{
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 
+}
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -225,7 +233,7 @@ kbd,/*Product Title Changes*/
 samp {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em;
-    white-space: normal;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100ch;
@@ -16503,6 +16511,7 @@ button.bg-slack:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    max-width: 100ch;
 }
 
 .text-left {

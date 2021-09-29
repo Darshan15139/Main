@@ -19,7 +19,7 @@
           border border-light
           mr-lg-4
         "
-        href="../../../index.html"
+        [routerLink]="['/']"
       >
         <!-- <img
           class="navbar-brand-dark"
@@ -37,7 +37,7 @@
           <div class="row">
             <div class="col-6 collapse-brand">
               <a
-                href="../../../index.html"
+              [routerLink]="['/']"
                 class="
                   navbar-brand
                   shadow-soft
@@ -69,7 +69,7 @@
         </div>
         <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link" data-toggle="dropdown">
+            <a [routerLink]="['/']" class="nav-link" data-toggle="dropdown">
               <span class="nav-link-inner-text">Home</span>
               <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
             </a>
@@ -81,7 +81,7 @@
               </li>
               <li>
                 <a class="dropdown-item" href="../../html/pages/pricing.html"
-                  >Custome PC Build</a
+                  >Custom PC Build</a
                 >
               </li>
               <li>
@@ -104,7 +104,7 @@
 
 
           <li class="nav-item dropdown mega-dropdown">
-            <a href="#" class="nav-link" data-toggle="dropdown">
+            <a [routerLink]="['/product-tab']" class="nav-link" data-toggle="dropdown">
               <span class="nav-link-inner-text">Products</span>
               <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
             </a>
@@ -501,13 +501,13 @@
 
       <div class="d-flex align-items-center">
         <a
-          href="https://themesberg.com/product/ui-kits/neumorphism-ui-pro"
+        [routerLink]="['/sign-up']"
           target="_blank"
           class="btn btn-primary text-secondary d-none d-md-inline-block mr-3"
           ><i class="fas fa-user-plus"></i> Register as Seller</a
         >
         <a
-          [routerLink]="['/sign-up/sign-up.component.html']"
+          [routerLink]="['/sign-up']"
           target="_blank"
           class="btn btn-primary"
           ><i class="fas fa-sign-in-alt"></i> Sign in</a
