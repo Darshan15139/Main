@@ -1,3 +1,4 @@
+import { CartService } from './../../Services/cart.service';
 import { Component, OnInit } from '@angular/core';
 import { AppserviceService } from 'src/app/Services/appservice.service';
 
@@ -8,12 +9,22 @@ import { AppserviceService } from 'src/app/Services/appservice.service';
 })
 export class ProductTabComponent implements OnInit {
 public productList : any;
-  constructor(private api : AppserviceService) { }
+  constructor(private api : AppserviceService, private cartService : CartService) { }
 
   ngOnInit(): void {
 this.api.getProduct()
   .subscribe(res => {
     this.productList = res;
-  });
+
+    this.productList.forEach((a:any) => {
+      // if(a.category ==="women's clothing" || a.category ==="men's clothing"){
+      //   a.category ="fashion"
+      // }
+      Object.assign(a,{quantity:1,total:a.price});
+    });
+    });
+  }
+  addtocart(item: any){
+    this.cartService.addtoCart(item);
   }
 }

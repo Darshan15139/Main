@@ -37,7 +37,7 @@
           <div class="row">
             <div class="col-6 collapse-brand">
               <a
-              [routerLink]="['/']"
+                [routerLink]="['/']"
                 class="
                   navbar-brand
                   shadow-soft
@@ -102,9 +102,12 @@
             </ul>
           </li>
 
-
           <li class="nav-item dropdown mega-dropdown">
-            <a [routerLink]="['/product-tab']" class="nav-link" data-toggle="dropdown">
+            <a
+              [routerLink]="['/product-tab']"
+              class="nav-link"
+              data-toggle="dropdown"
+            >
               <span class="nav-link-inner-text">Products</span>
               <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
             </a>
@@ -112,20 +115,34 @@
               <div class="row">
                 <div class="col-lg-6 inside-bg d-none d-lg-block">
                   <div class="justify-content-center bg-primary text-white">
-
                     <div class="row justify-content-center">
                       <div class="col-md-10">
-                          <!-- Carousel -->
-                          <div id="Carousel1" class="carousel slide shadow-soft border border-light p-4 rounded" data-ride="carousel">
-                              <div class="carousel-inner rounded">
-                                  <div class="carousel-item active">
-                                      <img src="../../../assets/img/carousel/image-1.jpg" class="d-block w-100" alt="slide1">
-                                  </div>
-                              </div>
+                        <!-- Carousel -->
+                        <div
+                          id="Carousel1"
+                          class="
+                            carousel
+                            slide
+                            shadow-soft
+                            border border-light
+                            p-4
+                            rounded
+                          "
+                          data-ride="carousel"
+                        >
+                          <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                              <img
+                                src="../../../assets/img/carousel/image-1.jpg"
+                                class="d-block w-100"
+                                alt="slide1"
+                              />
+                            </div>
                           </div>
-                          <!-- End of Carousel -->
+                        </div>
+                        <!-- End of Carousel -->
                       </div>
-                  </div>
+                    </div>
 
                     <div class="z-2 pb-4 text-center">
                       <a
@@ -317,7 +334,8 @@
                         "
                         href="https://themesberg.com/docs/neumorphism-ui/components/icon-boxes/#steps"
                         target="_blank"
-                        >Monitor <span class="badge badge-dark ml-3">Latest</span></a
+                        >Monitor
+                        <span class="badge badge-dark ml-3">Latest</span></a
                       >
                     </li>
                     <li>
@@ -351,8 +369,7 @@
                         "
                         href="https://themesberg.com/docs/neumorphism-ui/components/timelines/"
                         target="_blank"
-                        >UPS
-                        <span class="badge badge-dark ml-3">NEW</span></a
+                        >UPS <span class="badge badge-dark ml-3">NEW</span></a
                       >
                     </li>
                     <li>
@@ -423,7 +440,6 @@
             </ul>
           </li> -->
 
-
           <li class="nav-item dropdown">
             <a href="#" class="nav-link" data-toggle="dropdown">
               <span class="nav-link-inner-text">Support</span>
@@ -487,31 +503,38 @@
             </div>
           </li>
 
-          <div style="width: 300px;" class="form-group mb-4">
+          <div style="width: 300px" class="form-group mb-4">
             <div class="input-group input-group-shadow">
-                <input class="form-control" placeholder="Find Anything" type="text">
-                <div class="input-group-append">
-                    <span class="input-group-text"><i class="fas fa-search"></i></span>
-                </div>
+              <input
+                class="form-control"
+                placeholder="Find Anything"
+                type="text"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text"
+                  ><i class="fas fa-search"></i
+                ></span>
+              </div>
             </div>
-        </div>
+          </div>
         </ul>
-
       </div>
 
       <div class="d-flex align-items-center">
         <a
-        [routerLink]="['/sign-up']"
+          [routerLink]="['/sign-up']"
           target="_blank"
           class="btn btn-primary text-secondary d-none d-md-inline-block mr-3"
           ><i class="fas fa-user-plus"></i> Register as Seller</a
         >
-        <a
-          [routerLink]="['/sign-up']"
-          target="_blank"
-          class="btn btn-primary"
-          ><i class="fas fa-sign-in-alt"></i> Sign in</a
-        >
+        <div class=""><!-- Check Code here add badge number -->
+          <a routerLink="cart" class="btn btn-primary"
+            ><span
+            class="badge badge-sm badge-secondary ml-2"
+            >{{totalItem}}</span
+          ><i class="fas fa-shopping-cart"></i> My Cart</a
+          >
+        </div>
         <button
           class="navbar-toggler ml-2"
           type="button"

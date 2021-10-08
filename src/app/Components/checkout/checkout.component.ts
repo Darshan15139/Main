@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CheckoutService } from './../../Services/checkout.service';
 
 @Component({
   selector: 'app-checkout',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
+  public products: any = [];
+  public grandTotal!: number;
 
-  constructor() { }
+  constructor(private checkoutService: CheckoutService) { }
 
   ngOnInit(): void {
+    // this.checkoutService.getProducts()
+    // .subscribe(res=>{
+    //   this.products = res;
+    //   this.grandTotal = this.checkoutService.getTotalPrice();
+    // })
   }
 
 }

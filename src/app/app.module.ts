@@ -11,6 +11,10 @@ import { CartComponent } from './Components/cart/cart.component';
 import { CheckoutComponent } from './Components/checkout/checkout.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageLayoutComponent } from './Components/page-layout/page-layout.component';
+import { ProductPageComponent } from './Components/product-page/product-page.component';
+import { BillingComponent } from './Components/billing/billing.component';
+import { ThankYouComponent } from './Components/thank-you/thank-you.component';
+import { SellerformComponent } from './Components/sellerform/sellerform.component';
 
 
 
@@ -25,6 +29,10 @@ import { PageLayoutComponent } from './Components/page-layout/page-layout.compon
     CartComponent,
     CheckoutComponent,
     PageLayoutComponent,
+    ProductPageComponent,
+    BillingComponent,
+    ThankYouComponent,
+    SellerformComponent,
 
 
 
