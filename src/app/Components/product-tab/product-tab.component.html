@@ -2,8 +2,35 @@
 <div class="div card-top container">
   <h1 style="margin-top: 120px;">Our Products</h1>
   <div class="row">
-
-    <ng-container *ngFor="let item of productList">
+    <div class="card-top container-fluid">
+      <div class="container d-flex">
+          <div class="item">
+              <a (click)="filter('')">
+                <span class="fas fa-stream mr-2"></span>
+                  <!-- <h6>All products</h6> -->
+              </a>
+          </div>
+          <div class="item">
+              <a (click)="filter('Desktop')">
+                <span class="fas fa-desktop mr-2"></span>
+                  <!-- <h6>Desktop</h6> -->
+              </a>
+          </div>
+          <div class="item">
+              <a (click)="filter('CPU')">
+                <span class="far fa-trash-alt mr-2"></span>
+                  <!-- <h6>CPU</h6> -->
+              </a>
+          </div>
+          <div class="item">
+              <a (click)="filter('Laptop')">
+                <span style="width: 62px; margin-top: 5px;" class="fas fa-laptop mr-2"></span>
+                  <!-- <h6>Laptop</h6> -->
+              </a>
+          </div>
+      </div>
+  </div>
+    <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
       <div class="col-12 col-sm-4">
           <div class="card bg-primary shadow-soft border-light">
               <img style="object-fit: contain;" src={{item.Image1}} alt="apple watch">

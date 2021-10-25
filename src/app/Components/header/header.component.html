@@ -114,36 +114,41 @@
             <div class="dropdown-menu">
               <div class="row">
                 <div class="col-lg-6 inside-bg d-none d-lg-block">
+                  <!-- <div class="px-6 pb-5 pt-3">
+                      <img
+                        src="./assets/img/megamenu-image.jpg"
+                        alt="Pixel Components"
+                      />
+                    </div> -->
                   <div class="justify-content-center bg-primary text-white">
-                    <div class="row justify-content-center">
-                      <div class="col-md-10">
-                        <!-- Carousel -->
-                        <div
-                          id="Carousel1"
-                          class="
-                            carousel
-                            slide
-                            shadow-soft
-                            border border-light
-                            p-4
-                            rounded
-                          "
-                          data-ride="carousel"
-                        >
-                          <div class="carousel-inner rounded">
-                            <div class="carousel-item active">
-                              <img
-                                src="../../../assets/img/carousel/image-1.jpg"
-                                class="d-block w-100"
-                                alt="slide1"
-                              />
-                            </div>
+                    <div class="col-md-10">
+                      <!-- Carousel -->
+                      <div
+                        id="Carousel1"
+                        class="
+                          carousel
+                          slide
+                          shadow-soft
+                          border border-light
+                          p-4
+                          rounded
+                        "
+                        data-ride="carousel"
+                      >
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <img
+                              src="../../../assets/img/carousel/image-1.jpg"
+                              class="d-block w-100"
+                              alt="slide1"
+                            />
                           </div>
                         </div>
-                        <!-- End of Carousel -->
                       </div>
+                      <!-- End of Carousel -->
                     </div>
-
+                    <!-- <div class="row justify-content-center"></div> -->
+                    <br>
                     <div class="z-2 pb-4 text-center">
                       <a
                         href="../../html/components/all.html"
@@ -170,9 +175,9 @@
                 <div class="col pl-0">
                   <ul class="list-style-none">
                     <li>
+                      <!-- (click)="filter('Desktop')" -->
                       <a
                         class="dropdown-item"
-                        href="../../html/components/accordions.html"
                         >Desktops</a
                       >
                     </li>
@@ -506,9 +511,11 @@
           <div style="width: 300px" class="form-group mb-4">
             <div class="input-group input-group-shadow">
               <input
-                class="form-control"
-                placeholder="Find Anything"
                 type="text"
+                class="form-control"
+                [(ngModel)]="searchTerm"
+                (keyup)="search($event)"
+                placeholder="Find Anything"
               />
               <div class="input-group-append">
                 <span class="input-group-text"
@@ -527,12 +534,13 @@
           class="btn btn-primary text-secondary d-none d-md-inline-block mr-3"
           ><i class="fas fa-user-plus"></i> Register as Seller</a
         >
-        <div class=""><!-- Check Code here add badge number -->
+        <div class="">
+          <!-- Check Code here add badge number -->
           <a routerLink="cart" class="btn btn-primary"
-            ><span
-            class="badge badge-sm badge-secondary ml-2"
-            >{{totalItem}}</span
-          ><i class="fas fa-shopping-cart"></i> My Cart</a
+            ><span class="badge badge-sm badge-secondary ml-2">{{
+              totalItem
+            }}</span
+            ><i class="fas fa-shopping-cart"></i> My Cart</a
           >
         </div>
         <button

@@ -15,6 +15,9 @@ import { ProductPageComponent } from './Components/product-page/product-page.com
 import { BillingComponent } from './Components/billing/billing.component';
 import { ThankYouComponent } from './Components/thank-you/thank-you.component';
 import { SellerformComponent } from './Components/sellerform/sellerform.component';
+import { FilterPipe } from './shared/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { User } from './shared/Models/user.model/user.model.component';
 
 
 
@@ -33,6 +36,8 @@ import { SellerformComponent } from './Components/sellerform/sellerform.componen
     BillingComponent,
     ThankYouComponent,
     SellerformComponent,
+    FilterPipe,
+    User.ModelComponent,
 
 
 
@@ -40,7 +45,9 @@ import { SellerformComponent } from './Components/sellerform/sellerform.componen
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

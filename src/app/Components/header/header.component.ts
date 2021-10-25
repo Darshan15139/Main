@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from './../../Services/cart.service';
+// import { ProductTabComponent } from '../product-tab/product-tab.component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,6 +10,9 @@ export class HeaderComponent implements OnInit {
   public totalItem : number = 0;
   public searchTerm !: string;
 
+  // filterCategory: any;
+  // productList: any;
+
   constructor(private cartService : CartService) { }
 
   ngOnInit(): void {
@@ -17,5 +21,17 @@ export class HeaderComponent implements OnInit {
       this.totalItem = res.length;
     })
   }
-
+  search(event:any){
+    this.searchTerm = (event.target as HTMLInputElement).value;
+    console.log(this.searchTerm);
+    this.cartService.search.next(this.searchTerm);
+  }
+  // filter(category:string){
+  //   this.filterCategory = this.productList
+  //   .filter((a:any)=>{
+  //     if(a.category == category || category==''){
+  //       return a;
+  //     }
+  //   })
+  // }
 }
