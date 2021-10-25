@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,7 +18,6 @@ import { ThankYouComponent } from './Components/thank-you/thank-you.component';
 import { SellerformComponent } from './Components/sellerform/sellerform.component';
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { User } from './shared/Models/user.model/user.model.component';
 
 
 
@@ -37,7 +37,7 @@ import { User } from './shared/Models/user.model/user.model.component';
     ThankYouComponent,
     SellerformComponent,
     FilterPipe,
-    User.ModelComponent,
+
 
 
 

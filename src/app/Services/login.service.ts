@@ -14,12 +14,12 @@ export class LoginService {
   public loginAPIUrl : string = "https://localhost:44371/api/Login/";
 
   constructor(private _http : HttpClient) {
-    this.signUp(empObj : any){
-      //return this._http.post<any>(this.loginAPIUrl+"signup",empObj)
-      return this._http.post<any>(`${this.loginAPIUrl}signup`,empObj)
-    }
-    login(empObj:any){
-      return this._http.post<any>(`${this.loginAPIUrl}login`,empObj)
-    }
+    // this.signUp(empObj : any){
+    //   //return this._http.post<any>(this.loginAPIUrl+"signup",empObj)
+    //   return this._http.post<any>(`${this.loginAPIUrl}signup`,empObj)
+    // }
+    // login(empObj:any){
+    //   return this._http.post<any>(`${this.loginAPIUrl}login`,empObj)
+    // }
   }
 }

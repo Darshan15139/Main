@@ -28,26 +28,26 @@ export class SignUpComponent implements OnInit {
       usertype:["",Validators.required]
     })
   }
-  signUp(){
-    //   this.http.post<any>("http://localhost:3000/signupUser", this.signUpForm.value)
-    //   .subscribe(res=>{
-    //     alert("Signup Successfull");
-    //     this.signUpForm.reset();
-    //     this.router.navigate(['login'])
-    //   },err=>{
-    //     alert("Something went wrong");
-    //   })
-    // }
-    this.signupObj.FullName = this.signUpForm.value.fullname;
-    this.signupObj.UserName = this.signUpForm.value.username;
-    this.signupObj.Password = this.signUpForm.value.password;
-    this.signupObj.UserType = this.signUpForm.value.usertype;
-    this.signupObj.Phone_no = this.signUpForm.value.mobile
-    this.api.signUp(this.signupObj)
-    .subscribe((res:any) =>{
-      alert(res.message);
-      this.signUpForm.reset();
-      this.router.navigate(['login'])
-    })
-  }
+  // signUp(){
+  //   //   this.http.post<any>("http://localhost:3000/signupUser", this.signUpForm.value)
+  //   //   .subscribe(res=>{
+  //   //     alert("Signup Successfull");
+  //   //     this.signUpForm.reset();
+  //   //     this.router.navigate(['login'])
+  //   //   },err=>{
+  //   //     alert("Something went wrong");
+  //   //   })
+  //   // }
+  //   this.signupObj.FullName = this.signUpForm.value.fullname;
+  //   this.signupObj.UserName = this.signUpForm.value.username;
+  //   this.signupObj.Password = this.signUpForm.value.password;
+  //   this.signupObj.UserType = this.signUpForm.value.usertype;
+  //   this.signupObj.Phone_no = this.signUpForm.value.mobile
+  //   this.api.signUp(this.signupObj)
+  //   .subscribe((res:any) =>{
+  //     alert(res.message);
+  //     this.signUpForm.reset();
+  //     this.router.navigate(['login'])
+  //   })
+  // }
 }
